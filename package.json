@@ -9,12 +9,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@wasm-tool/wasm-pack-plugin": "^1.6.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "webnn-tflite-delegate": "^0.0.3"
-    
   },
   "scripts": {
     "start": "react-scripts start",
