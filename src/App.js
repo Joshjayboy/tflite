@@ -1,20 +1,11 @@
 import "./App.css";
-
+import tflite from "./mobilenet_v1_1.0_224_quant.tflite";
 import React, { useState, useEffect } from "react";
 
-function MyComponent() {
-  const [wasmModule, setWasmModule] = useState(null);
+console.log(tflite);
 
-  useEffect(() => {
-    const fetchWasmModule = async () => {
-      const response = await fetch("tflite.wasm");
-      const { instance } = await WebAssembly.instantiateStreaming(response);
-      setWasmModule(instance.exports);
-    };
-    fetchWasmModule();
-  }, []);
+const App = () => {
+  return console.log(tflite);
+};
 
-  return <div>{wasmModule && <p>WASM module loaded successfully</p>}</div>;
-}
-
-export default MyComponent;
+export default App;
